@@ -1,0 +1,712 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: RGBA(103, 130, 73);
+    background: linear-gradient(90deg, rgb(66, 84, 44) 0%, rgb(118, 122, 57) 50%, rgba(125, 129, 73, 1) 100%);
+    font-family: sans-serif;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    height: 5rem;
+    position: fixed;
+    width: 100%;
+    background: RGBA(103, 130, 73);
+    background: linear-gradient(90deg, rgb(66, 84, 44) 0%, rgb(118, 122, 57) 50%, rgba(125, 129, 73, 1) 100%);
+    z-index: 1000;
+    padding: 0 2rem;
+}
+
+.Nav-links{
+    margin-left: auto;
+    font-size: 25px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.Nav-links a{
+    text-decoration: none;
+    color: white;
+    padding: 30px;
+    font-family: sans-serif;
+}
+
+.Nav-links button{
+    background-color: RGBA(125, 129, 73);
+    padding: 10px;
+    border-radius: 5cap;
+    font-size: 20px;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+.Nav-links button a {
+    padding: 0;
+}
+
+.Logo{
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+nav span{
+    color: white;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2rem;
+    animation:   fadeInRight 3s ease-in 1s 1 alternate ;
+    /* margin-top: 5rem; */
+}
+
+.Material{
+    flex: 1;
+    min-width: 300px;
+    color: white;
+    padding: 2rem;
+    margin-top: 10%;
+}
+
+.home-img {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-img img{
+    max-width: 80%;
+    height: auto;
+    margin-top: 5%;
+    animation: float 2s ease-in-out 1s infinite alternate;
+}
+
+.Material span{
+    color: white;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.c-h1{
+    font-size: 60px;
+    font-family: sans-serif;
+    font-weight: 800;
+}
+
+.Material p{
+    font-size: 18px;
+    margin: 1rem 0;
+}
+
+.Material button{
+    background-color: rgb(156, 16, 16);
+    color: white;
+    padding: 18px;
+    font-size: 15px;
+    border-radius: 1cap;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 2%;
+}
+
+.TR{
+    display: block;
+    margin-top: 1rem;
+}
+
+#Home{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+#About{
+    width: 100%;
+    height: auto;
+    color: white;
+    font-family: sans-serif;
+    padding: 2rem;
+    text-align: center;
+}
+
+.Card-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.Card-container img{
+    height: 200px;
+    max-width: 100%;
+}
+
+#About h2{
+    color: white;
+    margin-top: 5%;
+    font-size: 50px;
+    font-family: sans-serif;
+}
+
+.About-main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 0;
+     animation:   fadeInRight 3s ease-in 1s 1 alternate ;
+}
+
+.c-h2 {
+    font-size: 60px;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+
+.card-Material {
+    color: white;
+    font-size: 20px;
+    font-family: sans-serif;
+    flex: 1;
+    min-width: 300px;
+    padding: 2rem;
+    text-align: left;
+}
+
+.card-Material button{
+    background-color: rgb(156, 16, 16);
+    color: white;
+    padding: 18px;
+    font-size: 15px;
+    border-radius: 1cap;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 2%;
+}
+
+.card-img {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Card img:hover{
+    cursor: pointer;
+    transform: scale(1.5);
+    transition: all 1s;
+}
+.card-img img{
+    max-width: 60%;
+    height: auto;
+    margin-right: 50%;
+     animation: float 2s ease-in-out 1s infinite alternate;
+}
+
+#Candy {
+    width: 100%;
+    height: auto;
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 2rem;
+}
+
+#Candy h1{
+    color: white;
+    margin-top: 5%;
+    font-size: 50px;
+    font-family: sans-serif;
+}
+
+.Main-Candy{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.candy-cards{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem 0;
+    color: white;
+    font-family: sans-serif;
+}
+.candy-c img{
+    height: 200px;
+}
+.candy-c{
+    border-radius: 3cap;
+    padding-bottom: 2%;
+    background-color: rgb(66, 84, 44);
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.candy-c img:hover {
+    cursor: pointer;
+    transform: translatey(20px);
+    transition: all 1s ease;
+}
+
+.Discount{
+    width: 80%;
+    height: auto;
+    background-color: rgb(66, 84, 44);
+    border-radius: 5cap;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    margin: 2rem auto;
+}
+
+.Discount img{
+    max-width: 100%;
+    height: auto;
+    flex: 1;
+    min-width: 250px;
+}
+
+.Discount div {
+    flex: 1;
+    min-width: 250px;
+    padding: 1rem;
+}
+
+.Discount button{
+    background-color: brown;
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 400;
+    border: none;
+    border-radius: 1cap;
+    margin-top: 5%;
+    cursor: pointer;
+}
+
+#New {
+    width: 100%;
+    height: auto;
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 2rem;
+}
+
+#New h1{
+    color: white;
+    font-size: 50px;
+    font-family: sans-serif;
+}
+
+.New{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    color: white;
+    font-family: sans-serif;
+    margin: 2rem 0;
+}
+
+.New-c{
+    background-color: rgb(66, 84, 44);
+    border-radius: 1cap;
+    padding-bottom: 2%;
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.New-c:hover {
+    transform: translateY(-10px);
+}
+
+.New img{
+    max-width: 100%;
+    height: auto;
+}
+
+#support{
+    width: 100%;
+    height: auto;
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 2rem;
+}
+
+#support h1{
+    font-size: 60px;
+}
+
+#support p{
+    font-size: 20px;
+}
+
+#support input{
+    background-color: rgba(66, 84, 44, 0.813);
+    padding: 20px;
+    padding-left: 50px;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 20px;
+    width: 300px;
+    max-width: 100%;
+    margin: 1rem 0;
+}
+
+#support button{
+    background-color: brown;
+    color: rgb(255, 255, 255);
+    padding: 18px;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 400;
+    border: none;
+    margin-top: 5%;
+    cursor: pointer;
+}
+
+footer{
+    width: 100%;
+    height: auto;
+    background-color: rgba(66, 84, 44, 0.9);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 150px;
+    background-image: url(Hacakathon-1/footer2-img.png);
+    padding: 2rem 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+     background-image: url(Hacakathon-1/footer1-img.png);
+     background-repeat: no-repeat;
+     background-position: right 90%;
+     background-size: 150px;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 30px;
+    padding: 0 15px;
+    text-align: left;
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-logo img {
+    margin-bottom: 10px;
+}
+
+.footer-logo span {
+    color: #FFD700;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.footer-logo p {
+    color: #cccccc;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    max-width: 300px;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-link {
+    color: #ffffff;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.social-link:hover {
+    color: #FFD700;
+}
+
+.footer-column h3 {
+    color: #FFD700;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.footer-links {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #cccccc;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #FFD700;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    flex-wrap: wrap;
+}
+
+.copyright p {
+    color: #aaaaaa;
+    font-size: 0.9rem;
+}
+
+.footer-bottom-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-bottom-links a {
+    color: #aaaaaa;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.footer-bottom-links a:hover {
+    color: #FFD700;
+}
+
+/* Animation classes */
+.animate {
+    animation: fadeInUp 1s ease forwards;
+    opacity: 0;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .Nav-links {
+        font-size: 20px;
+    }
+    
+    .Nav-links a {
+        padding: 20px;
+    }
+    
+    .c-h1 {
+        font-size: 50px;
+    }
+    
+    .c-h2 {
+        font-size: 40px;
+    }
+    
+    #About h2, #Candy h1, #New h1, #support h1 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem;
+    }
+    
+    .Logo {
+        margin-left: 0;
+        margin-bottom: 1rem;
+    }
+    
+    .Nav-links {
+        margin-left: 0;
+        font-size: 18px;
+        padding: 10px;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .Nav-links a {
+        padding: 10px;
+    }
+    
+    .main {
+        flex-direction: column;
+        margin-top: 8rem;
+    }
+    
+    .Material {
+        margin-left: 0;
+        text-align: center;
+    }
+    
+    .home-img img {
+        margin-left: 0;
+    }
+    
+    .About-main {
+        flex-direction: column;
+    }
+    
+    .card-Material {
+        margin-left: 0;
+        text-align: center;
+    }
+    
+    .card-img img {
+        margin-right: 0;
+
+    }
+    
+    .Discount {
+        flex-direction: column;
+    }
+    
+    #support input {
+        width: 100%;
+        padding: 15px;
+        padding-left: 20px;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer-column {
+        margin-bottom: 20px;
+    }
+    
+    .footer-logo {
+        align-items: center;
+    }
+    
+    .social-links {
+        justify-content: center;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .Nav-links a {
+        padding: 5px;
+    }
+    
+    .c-h1 {
+        font-size: 40px;
+    }
+    
+    .c-h2 {
+        font-size: 30px;
+    }
+    
+    #About h2, #Candy h1, #New h1, #support h1 {
+        font-size: 30px;
+    }
+    
+    .Material p, .card-Material p, #support p {
+        font-size: 16px;
+    }
+    
+    .Card-container, .candy-cards, .New {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .Card, .candy-c, .New-c {
+        max-width: 100%;
+    }
+}
